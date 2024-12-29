@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$ Irfan $</title>
     <style>
         body {
@@ -12,25 +12,28 @@
             color: #fff;
             background-color: #000;
             overflow: hidden;
-            min-width: 1024px; /* Agar selalu tampil seperti desktop */
         }
         .container {
             text-align: center;
             position: relative;
             z-index: 10;
+            padding: 5px;
         }
         h1 {
             color: #00ff00;
-            margin-top: 20px;
+            margin-top: 10px;
+            font-size: calc(1.3rem + 1.5vw);
         }
         .about {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            font-size: 1.2em;
+            max-width: 85%;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: calc(0.8rem + 0.4vw);
             line-height: 1.6em;
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 8px;
+            box-sizing: border-box;
+            position: relative;
         }
         a {
             color: #ffd700;
@@ -51,12 +54,21 @@
             display: block;
         }
         .profile-pic {
-            margin-top: 30px;
-            width: 150px;
-            height: 150px;
+            margin-top: 20px;
+            width: 18vmin;
+            height: 18vmin;
+            max-width: 120px;
+            max-height: 120px;
             border-radius: 50%;
             border: 3px solid #00ff00;
             background-color: #fff;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: calc(0.8rem + 0.3vw);
+            color: #ffd700;
+            position: relative;
+            z-index: 11;
         }
     </style>
 </head>
@@ -80,9 +92,9 @@
             <p>
                 <strong>Skills:</strong> Stress testing, botnet management, bypassing anti-DDoS protections
             </p>
-            <p>
-                <strong>Contact:</strong> WhatsApp <a href="https://wa.me/6285176708678" target="_blank">0851-7670-8678</a>
-            </p>
+        </div>
+        <div class="contact-info">
+            <strong>Contact:</strong> WhatsApp <a href="https://wa.me/6285176708678" target="_blank">0851-7670-8678</a>
         </div>
     </div>
     <script>
